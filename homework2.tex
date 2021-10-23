@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+
+\title{Homework 2}
+\author{DUMA Yehor (31209504)}
+\date{10/28}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Exercise 5}
+$\textbf{(a)}\wp (\{a,b,c\})=\{\{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\},\{b,c\},\{a,b,c\},\varnothing\} \\~\\
+\textbf{(b)} \wp (\{a\}) = \{\{a\}, \varnothing\} \\~\\
+\textbf{(c)} \wp (\varnothing)= \{\varnothing\} \\~\\
+\textbf{(d)} \wp (\{\varnothing\})= \{\{\varnothing\}, \varnothing\} \\~\\
+\textbf{(e)} \wp (\wp (\{a,b\}))= \\~\\
+= \wp (\{\{a\}, \{b\}, \{a,b\}, \varnothing\})=
+\{\{a\},
+\{b\},
+\{a,b\},
+\{\{a\}, \{a,b\}\},
+\{\{a\}, \{b\}\}, \\
+\{\{b\}, \{a,b\}\},
+\{\{a\}, \{b\}, \{a,b\}\},
+\{\{a\}, \{b\}, \{a,b\},\{\varnothing\}\},
+\{\{\varnothing\}\},
+\{\{\varnothing\},b\}\}, \\
+\{\{\varnothing\},\{a\}\},
+\{\{\varnothing\},\{b\}\},
+\{\{\varnothing\},\{a,b\}\},
+\{\{\varnothing\},\{a\},\{b\}\},
+\{\{\varnothing\},\{a\},\{a,b\}\}, \\
+\{\{\varnothing\},\{b\},\{a,b\}\},
+\varnothing\}
+$
+\section{Exercise 9}
+
+\textbf{(a)} $((A \cup C) \cap (B \cup C')) \subseteq (A \cup B)$ \\~\\
+\textbf{1)} $((A \cup C) \cap (B \cup C')) \cup (A \cup B) =  (A \cup B)$  	\hspace*{\fill} Cons(a) \\ 
+\textbf{2)} $(((A \cup C) \cap B) \cup ((A \cup C) \cap C')) \cup (A \cup B)= (A \cup B)$ \hspace*{\fill} Distr(b) \\
+\textbf{3)} $(((A \cup C) \cap B) \cup ((C' \cap A) \cup (C'\cap C))) \cup (A \cup B) = (A \cup B)$\hspace*{\fill} Distr(b) \\
+\textbf{4)} $(((A \cup C) \cap B) \cup ((C' \cap A) \cup \varnothing)) \cup (A \cup B) = (A \cup B)$\hspace*{\fill} Compl(c)\\
+\textbf{5)} $(((A \cup C) \cap B) \cup (C' \cap A)) \cup (A \cup B) = (A \cup B)$\hspace*{\fill} Ident(a)\\
+\textbf{6)} $(((C' \cap A) \cup (A \cup C)) \cap ((C' \cap A) \cup B)) \cup (A \cup B) = (A \cup B) $\hspace*{\fill} Distr(a) \\
+\textbf{7)} $((((A\cup C) \cup C') \cap ((A \cup C) \cup A)) \cap ((C' \cap A) \cup B)) \\ \cup (A \cup B) = (A \cup B) $\hspace*{\fill} Distr(a) \\
+\textbf{8)} $((((A\cup (C \cup C')) \cap ((A \cup C) \cup A)) \cap ((C' \cap A) \cup B)) \\ \cup (A \cup B) = (A \cup B)$\hspace*{\fill} Ass(a) \\
+\textbf{9)} $(((A\cup U) \cap ((A \cup C) \cup A)) \cap ((C' \cap A) \cup B)) \cup (A \cup B) = (A \cup B)$\hspace*{\fill} Compl(a) \\
+\textbf{10)} $((U \cap ((A \cup C) \cup A)) \cap ((C' \cap A) \cup B)) \cup (A \cup B) = (A \cup B)$\hspace*{\fill} Ident(b)\\
+\textbf{11)} $((U \cap (A \cup C)) \cap ((C' \cap A) \cup B)) \cup (A \cup B) = (A \cup B)$\hspace*{\fill} Idemp(a)\\
+\textbf{12)} $((A \cup C) \cap ((C' \cap A) \cup B)) \cup (A \cup B) = (A \cup B)$\hspace*{\fill} Ident(d)\\
+\textbf{13)} $((A \cup B) \cup (A \cup C)) \cap ((A \cup B) \cup ((C' \cap A) \cup B)) = (A \cup B)$\hspace*{\fill} Distr(a) \\
+\textbf{14)} $(A \cup A \cup B \cup C)  \cap ((A \cup B) \cup ((C' \cap A) \cup B)) = (A \cup B)$\hspace*{\fill} Assoc(a)\\
+\textbf{15)} $(A \cup B \cup C)  \cap ((A \cup B) \cup ((C' \cap A) \cup B)) = (A \cup B)$\hspace*{\fill} Idemp(a)\\
+\textbf{16)} $(A \cup B \cup C)  \cap ((A \cup B) \cup ((B \cup C') \cap (B \cup A))) = (A \cup B)$\hspace*{\fill} Distr(a)\\
+\textbf{17)} $(A \cup B \cup C)  \cap ((A \cup B) \cup (A \cup B)) \cap (A \cup B)\cup(B \cup C')) = (A \cup B)$\hspace*{\fill} Distr(a)\\
+\textbf{18)} $(A \cup B \cup C)  \cap ((A \cup B) \cap (A \cup B)\cup(B \cup C')) = (A \cup B)$\hspace*{\fill} Idemp(a)\\
+\textbf{19)} $(A \cup B \cup C)  \cap ((A \cup B) \cap (A \cup B\cup B \cup C')) = (A \cup B)$\hspace*{\fill} Assoc(a)\\
+\textbf{20)} $(A \cup B \cup C)  \cap ((A \cup B) \cap (A \cup B \cup C')) = (A \cup B)$\hspace*{\fill} Idemp(a) \\
+\textbf{21)} $(A \cup B \cup C)  \cap (A \cup B) = (A \cup B)$\hspace*{\fill} Absorp \\
+\textbf{22)} $(A \cup B \cup C) \subseteq (A \cup B)$\hspace*{\fill} Cons(b)\\
+\textbf{22)} $(A \cup B) \cup C \subseteq (A \cup B)$\hspace*{\fill} Assoc(a) \\
+\textbf{23)} $(A \cup B) \subseteq (A \cup B)$\hspace*{\fill} Cons(a) \\
+\\
+\textbf{(b)} $A \cap (B - A) = \varnothing$ \\~\\
+\textbf{1)} $A \cap (B \cap A')= \varnothing$ \hspace*{\fill} Compl(d) \\
+\textbf{2)} $A \cap A'\cap B= \varnothing $ \hspace*{\fill} Comm(b) \\
+\textbf{3)} $\varnothing \cap B= \varnothing $ \hspace*{\fill} Compl(c) \\
+\textbf{4)} $B \cap \varnothing= \varnothing $ \hspace*{\fill} Comm(b) \\
+\textbf{5)} $ \varnothing = \varnothing $ \hspace*{\fill} Comm(b) \\
+
+
+\end{document}
+

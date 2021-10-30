@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+
+\title{Homework 3}
+\author{DUMA Yehor (31209504)}
+\date{11/4}
+\begin{document}
+
+\maketitle
+
+\section{Exercise 2}
+$A = \{a,b,c\}$ \\
+$B = \{1,2\}$ \\ \\
+There are \textbf{64} distinct relations from A to B: \\ \\
+$A \times B = \{\langle a,1 \rangle, \langle a,2 \rangle, \langle b,1 \rangle, \langle b,2 \rangle, \langle c,1 \rangle, \langle c,2\rangle\}$ \\ \\
+$|\wp  (A \times B)| = 2 ^{ |A \times B|} = 2^6 = 64$ \\ \\ 
+There are \textbf{8} distinct functions from A to B: \\ \\ 
+the domain is A, $|A|=3$ \\ 
+the range is B, $|B|= 2$ \\
+$|B|^{|A|}= 2^3=8$ \\ \\
+$F_1=\{\langle a,1 \rangle, \langle b,1 \rangle, \langle c,2 \rangle \}$ \\
+$F_2=\{\langle a,1 \rangle, \langle b,2 \rangle, \langle c,1 \rangle \}$ \\
+$F_3=\{\langle a,1 \rangle, \langle b,2 \rangle, \langle c,2 \rangle \}$ \\
+$F_4=\{\langle a,2 \rangle, \langle b,1 \rangle, \langle c,1 \rangle \}$ \\
+$F_5=\{\langle a,2 \rangle, \langle b,2 \rangle, \langle c,1 \rangle \}$ \\
+$F_6=\{\langle a,2 \rangle, \langle b,1 \rangle, \langle c,2 \rangle \}$ \\
+$F_7=\{\langle a,1 \rangle, \langle b,1 \rangle, \langle c,1 \rangle \}$ \\
+$F_8=\{\langle a,2 \rangle, \langle b,2 \rangle, \langle c,2 \rangle \}$ \\ \\
+$F_1$-$F_6$ are \textbf{onto} because the ranges of $F_1$-$F_6 = B$ \\
+$F_7$-$F_8$ are \textbf{into} because the ranges of $F_1$-$F_6 \subseteq  B$ \\ \\ 
+None of the functions are \textbf{one-to-one} because $|A| \neq |B|$. \\
+None of the relations $F^{-1}_{1}$-$F^{-1}_{8}$ are functions since none of $F_1$-$F_8$ are one-to-one and onto.
+
+
+\end{document}

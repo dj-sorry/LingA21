@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{CJKutf8}
+
+\begin{CJK}{UTF8}{min}
+
+\title{Homework 2 (補足)}
+\author{DUMA Yehor (31209504)}
+\date{11/8}
+\begin{document}
+
+\maketitle
+
+\section{2.2 Set Operations. Ex. 20}
+
+\textbf{(c)} $(A-B)-C \subseteq A-C$ \\ \\
+By consistency principle this is true iff
+$((A-B)-C)\cup (A-C) = A-C$ \\
+1) $((A-B)-C)\cup (A-C)$ \\
+2) $((A \cap B')-C)\cup (A-C)$\hspace*{\fill} Complement \\
+3) $((A \cap B')\cap C')\cup (A-C)$\hspace*{\fill} Complement \\
+4) $((A \cap B')\cap C')\cup (A\cap C')$\hspace*{\fill} Complement \\
+5) $((A \cap C')\cap B')\cup (A\cap C')$\hspace*{\fill} Associative \\
+6) $(A\cap C') \cup ((A \cap C')\cap B')$\hspace*{\fill} Commutative \\
+7) $A\cap C'$\hspace*{\fill} Absorption \\
+8) $A-C$\hspace*{\fill} Complement \\ \\
+\textbf{(d)} $(A-C) \cap (C-B) = \varnothing$ \\ \\
+1) $(A-C) \cap (C-B)$ \\
+2) $(A \cap C') \cap (C-B)$ \hspace*{\fill} Complement \\ 
+3) $(A \cap C') \cap (C \cap B')$ \hspace*{\fill} Complement \\ 
+4) $(A \cap (C' \cap C)) \cap B'$ \hspace*{\fill} Associative \\ 
+5) $(A \cap \varnothing) \cap B'$ \hspace*{\fill} Complement \\ 
+6) $\varnothing \cap B'$ \hspace*{\fill} Identity \\ 
+6) $ B' \cap \varnothing $ \hspace*{\fill} Commutative \\ 
+7) $\varnothing$ \hspace*{\fill} Identity \\ \\
+\textbf{(e)} $(B-A) \cup (C-A) = (B \cup C) - A$ \\ \\ 
+1) $(B \cup C) - A$ \\
+2) $(B \cup C) \cap A'$ \hspace*{\fill} Complement\\
+3) $  A' \cap (B \cup C) $ \hspace*{\fill} Commutative\\
+4) $ (A' \cap B) \cup (A' \cap C) $ \hspace*{\fill} Distributive\\
+5) $ (B \cap A') \cup (C \cap A') $ \hspace*{\fill} Commutative x2\\
+6) $ (B - A) \cup (C - A) $ \hspace*{\fill} Complement x2
+\end{CJK}
+\end{document}

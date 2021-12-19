@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{tikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{Homework 9}
+\author{DUMA Yehor (31209504)}
+\date{12/23}
+\begin{document}
+
+\maketitle
+\section{Exercise 6}
+
+\textbf{(b)} \\
+1. $((\sim p \wedge q)\vee \sim (p \vee q))$ \\
+2. $((\sim p \wedge q)\vee (\sim p \wedge \sim q)) $ \hspace*{\fill} DeMorgan's(b) \\
+3. $(\sim p \wedge (q \vee \sim q))$ \hspace*{\fill} Distributive(b) \\
+4. $(\sim p \wedge T)$ \hspace*{\fill} Complement(a) \\
+5. $\sim p$\hspace*{\fill} Identity(d)\\ \\
+\textbf{(c)} \\
+1. $(\sim p \wedge ((p \wedge q) \vee (p \wedge r)))$ \\
+2. $( \sim p \wedge (p \wedge(q \vee r)) $ \hspace*{\fill}Distributive(b) \\
+3. $(( \sim p \wedge p) \wedge (q \vee r)) $ \hspace*{\fill} Associative(b) \\
+3. $(F \wedge (q \vee r))$ \hspace*{\fill} Complement(a) \\
+4. $((q \vee r) \wedge F)$ \hspace*{\fill} Commutative(b) \\
+5. $F$ \hspace*{\fill} Identity(c) \\ \\ 
+\textbf{(d)} \\
+1. $(( \sim p \wedge q) \leftrightarrow (p\vee q))$ \\
+2. $(((\sim p \wedge q) \rightarrow (p \vee q)) \wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Biconditional(a) \\
+3. $((\sim (\sim p \wedge q) \vee (p \vee q)) \wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Conditional(a) \\
+4. $(((p \vee \sim q) \vee (p \vee q))\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Demorgan's(b) \\
+5. $(((\sim q \vee p) \vee (p \vee q))\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Commutative(a) \\
+6. $((((\sim q \vee (p\vee p)) \vee q))\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Associative(a) \\
+7. $(((\sim q \vee p) \vee q))\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Idempotent(a) \\
+8. $(((p \vee \sim q) \vee q))\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Commutative(a) \\
+9. $((p \vee (\sim q \vee q))\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Associative(a) \\
+10. $((p \vee ( q \vee \sim q))\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Commutative(a) \\
+11. $((p \vee T)\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Complement(a) \\
+12. $(T\wedge ((p \vee q) \rightarrow ( \sim p \wedge q))) $ \hspace*{\fill} Identity(b) \\
+13. $(((p \vee q) \rightarrow ( \sim p \wedge q)) \wedge T) $ \hspace*{\fill} Commutative(b) \\
+14. $((p \vee q) \rightarrow ( \sim p \wedge q)) $ \hspace*{\fill} Complement(d) \\
+15. $(\sim (p \vee q )\vee (\sim p \wedge q))$ \hspace*{\fill} Conditional(a) \\
+16. $((\sim p \vee \sim q )\vee (\sim p \wedge q))$ \hspace*{\fill} Demorgan's(a) \\
+17. $( \sim p \wedge (\sim q \vee q))$ \hspace*{\fill} Distributive(b) \\
+18. $( \sim p \wedge (q \vee \sim q))$ \hspace*{\fill} Commutative(a) \\
+19. $( \sim p \wedge T)$ \hspace*{\fill} Complement(a) \\
+20. $\sim p$ \hspace*{\fill} Identity(d) \\ \\
+\textbf{(e)} \\
+1. $(((p\vee q) \wedge (r \vee \sim q)) \rightarrow (p \vee r))$ \\
+2. $( \sim (((p \vee q) \wedge (r \vee \sim q)) \wedge ( \sim (p \vee r))))$ \hspace*{\fill} Conditional(c) \\ 
+3. $ (\sim ((p \vee q) \wedge (r \vee \sim q)) \vee \sim (\sim p \wedge \sim r)) $\hspace*{\fill} Demorgan's(b) \\ 
+4. $(\sim ((p \vee q) \wedge (r \vee \sim q)) \vee (p \vee r))$\hspace*{\fill} Demorgan's(b) \\ 
+5. $(( \sim (p \vee q) \vee \sim (r \vee \sim q)) \vee (p \vee r))$\hspace*{\fill} Demorgan's(b) \\
+6. $(((\sim p \wedge \sim q) \vee \sim (r \vee \sim q)) \vee (p \vee r))$\hspace*{\fill} Demorgan's(a) \\
+7. $(((\sim p \wedge \sim q) \vee ( \sim r \wedge q)) \vee (p \vee r))$ \hspace*{\fill} Demorgan's(a) \\
+8. $(((\sim p \wedge \sim q) \vee ( \sim r \wedge q)) \vee (r \vee p))$ \hspace*{\fill} Commutative(a) \\
+9. $((\sim p \wedge \sim q) \vee ((( \sim r \wedge q) \vee r) \vee p))$ \hspace*{\fill} Associative(a) \\
+10. $((\sim p \wedge \sim q) \vee ((r \vee (\sim r \wedge q)) \vee p))$ \hspace*{\fill} Commutative(a) \\
+11. $((\sim p \wedge \sim q) \vee (((r \vee \sim r) \wedge (r \vee q)) \vee p))$ \hspace*{\fill} Distributive(a) \\
+12. $((\sim p \wedge \sim q) \vee ((T \wedge (r \vee q)) \vee p))$ \hspace*{\fill} Complement(a) \\
+13. $((\sim p \wedge \sim q) \vee (((r \vee q) \wedge T) \vee p))$ \hspace*{\fill} Commutative(b) \\
+14. $((\sim p \wedge \sim q) \vee ((r \vee q) \vee p))$ \hspace*{\fill} Identity(d) \\
+15. $((\sim p \wedge \sim q) \vee (p \vee (r \vee q)))$ \hspace*{\fill} Commutative(a) \\
+16. $(((\sim p \wedge \sim q) \vee p) \vee (r \vee q))$ \hspace*{\fill} Associative(a) \\
+17. $((p \vee (\sim p \wedge \sim q)) \vee (r \vee q))$ \hspace*{\fill} Commutative(a) \\
+18. $(((p \vee \sim p) \wedge(p \vee \sim q)) \vee (r \vee q))$ \hspace*{\fill} Distributive(a) \\
+19. $((T \wedge(p \vee \sim q)) \vee (r \vee q))$ \hspace*{\fill} Complement(a) \\
+20. $(((p \vee \sim q) \wedge T) \vee (r \vee q))$ \hspace*{\fill} Commutative(b) \\
+21. $((p \vee \sim q) \vee (r \vee q))$ \hspace*{\fill} Complement(a) \\
+22. $((p \vee \sim q) \vee (q \vee r))$ \hspace*{\fill} Commutative(a) \\
+23. $(p \vee ((\sim q \vee q) \vee r))$ \hspace*{\fill} Associative(a) \\
+24. $(p \vee (T \vee r))$ \hspace*{\fill} Complement(a) \\
+25. $(p \vee (r \vee T))$ \hspace*{\fill} Commutative(a) \\
+26. $(p \vee T)$ \hspace*{\fill} Identity(b) \\
+26. $T$ \hspace*{\fill} Identity(b) \\
+\end{document}

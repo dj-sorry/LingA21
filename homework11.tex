@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{tikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{Homework 11}
+\author{DUMA Yehor (31209504)}
+\date{1/13}
+\begin{document}
+
+\maketitle
+\section{Exercise 1 (a-j)}
+(a) Everything is black or white. B(x) - 'x is black', W(x) - 'x is white' \\ \\
+$(\forall x)(B(x) \vee W(x))$ \\ \\
+(b) Either everything is black or it is white.\\ \\
+$(\forall x)(B(x) \vee W(x))$ \\ \\
+(c) A dog is a quadruped. D(x) - 'x is a dog' \\ \\
+$(\forall x) (D(x) \rightarrow Q(x))$ \\ \\
+(d) Fido is a dog. D(f) - 'Fido is a dog' \\ \\
+$D(f)$ \\\\
+(e) Everybody loves somebody. L(x,y) - 'x loves y' \\\\
+$(\forall x)(\exists y)(L(x,y))$ \\\\
+(f) Someone is loved by everyone. \\\\
+$(\exists x)(\forall y)(L(y,x))$ \\\\
+(g) There is someone whom everyone loves. \\\\
+$(\exists x)(\forall y)(L(y,x))$ \\\\
+(h) If someone loves someone, John loves himself. j - 'John' \\\\
+$(\exists x)(\exists y)(L(x,y) \rightarrow L(j,j))$ \\\\
+(i) No one loves himself, unless it is John. \\\\
+$(\forall x)(L(x,x) \rightarrow (x=j))$ \\\\
+(j) Anyone either loves himself or some woman. W(x) - 'x is a woman' \\\\
+$(\forall x)(L(x,x) \vee (\exists y)(L(x,y) \wedge W(y))$
+
+
+
+
+\end{document}

@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{tikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{Homework 10}
+\author{DUMA Yehor (31209504)}
+\date{1/6}
+\begin{document}
+
+\maketitle
+\section{Exercise 9}
+
+\textbf{(b)} \\
+$p$ \\
+$\sim r$ \\
+\underline{$(p \wedge \sim r) \rightarrow q$} \\
+$\therefore q$ \\ \\ 
+1. $p$ \\
+2. $\sim r$ \\
+3. $(p \wedge \sim r) \rightarrow q$ \\
+4. $(p \wedge \sim r)$ \hspace*{\fill} Conj.(1,2) \\
+5. $q$ \hspace*{\fill} M.P.(3,4) \\ \\
+\textbf{(d)} \\
+$p \rightarrow \sim q$ \\
+$r \rightarrow q$ \\
+\underline{$\sim r \rightarrow s$} \\
+$\therefore p \rightarrow s$ \\ \\
+1. $p \rightarrow \sim q$ \\
+2. $r \rightarrow q$ \\
+3.$\sim r \rightarrow s$ \\
+4. $\quad p$ \hspace*{\fill} A.P. \\ 
+5. $\quad \sim q$ \hspace*{\fill} M.P.(1,4) \\ 
+6. $\quad \sim r$ \hspace*{\fill} M.T.(2,5) \\ 
+7. $\quad s$ \hspace*{\fill} M.P.(3,6) \\ 
+8. $p \rightarrow s$ \hspace*{\fill} C.P.(4-7) \\ \\
+\textbf{(f)} \\ \\
+$p \vee (q \wedge r)$ \\
+$\sim t$ \\
+$(p \vee q) \rightarrow (s \vee t)$ \\
+\underline{$\sim p$} \\
+$\therefore r \wedge s$ \\ \\ 
+1. $p \vee (q \wedge r)$ \\
+2. $\sim t$ \\
+3. $(p \vee q) \rightarrow (s \vee t)$ \\
+4. $\sim p$ \\
+5. $(p\vee q) \wedge (p \vee r)$ \hspace*{\fill} Distr(1) \\
+6. $p \vee q$\hspace*{\fill} Simp(5) \\
+7. $s \vee t$\hspace*{\fill} M.P.(3,6) \\
+8. $s$\hspace*{\fill} D.S.(2,7) \\
+9. $p \vee r $\hspace*{\fill} Simp(5) \\
+10. $r$\hspace*{\fill} D.S.(4,9) \\
+11. $r \wedge s$ \hspace*{\fill} Conj(8,10) \\ \\ 
+\textbf{(h)} \\ 
+$\sim p \rightarrow q$ \\
+$r \rightarrow (s \vee t)$ \\ 
+$s \rightarrow \sim r$ \\
+\underline{$p \rightarrow \sim t$} \\ 
+$\therefore r \rightarrow q$ \\ \\ 
+1. $\sim p \rightarrow q$ \\
+2. $r \rightarrow (s \vee t)$ \\ 
+3. $s \rightarrow \sim r$ \\
+4. $p \rightarrow \sim t$ \\ 
+5. $\quad r $\hspace*{\fill} A.P. \\
+6. $\quad s \vee t$\hspace*{\fill} M.P.(2,5) \\
+7. $\quad \sim s $\hspace*{\fill} M.P.(3,5) \\
+8. $\quad t $\hspace*{\fill} D.S.(6,7) \\
+9. $\quad \sim p $\hspace*{\fill} M.T.(4,8) \\
+10. $\quad q $\hspace*{\fill} M.P.(1,9) \\
+11. $r \rightarrow q$\hspace*{\fill} C.P.(5,10) \\ \\ 
+\textbf{(j)} \\
+$p \rightarrow q$ \\
+$r \rightarrow s$ \\
+$\sim q \vee \sim s$ \\
+$p$ \\
+\underline{$(t\wedge u) \rightarrow r$} \\
+$\therefore \sim t \vee \sim u$ \\ \\ 
+1. $p \rightarrow q$ \\
+2. $r \rightarrow s$ \\
+3. $\sim q \vee \sim s$ \\
+4. $p$ \\
+5. $(t\wedge u) \rightarrow r$ \\
+6. $q$ \hspace*{\fill} M.P.(1,4) \\
+7. $\sim s$ \hspace*{\fill} D.S.(3,6) \\
+8. $\sim r$ \hspace*{\fill} M.T.(2,7) \\
+9. $\sim (t \wedge u)$ \hspace*{\fill} M.T.(5,8) \\
+10. $\sim t \vee \sim u$ \hspace*{\fill} Demorgan's(9) \\ \\ 
+\textbf{(l)} \\
+$p$ \\
+$(p \wedge q) \vee (p \wedge r)$ \\
+\underline{$(p \vee q) \rightarrow \sim r$} \\
+$\therefore p \leftrightarrow q$  \\ \\
+1. $p$ \\
+2. $(p \wedge q) \vee (p \wedge r)$ \\
+3. $(p \vee q) \rightarrow \sim r$ \\
+4. $p \vee q$ \hspace*{\fill} Add(1)  \\
+5. $\sim r$ \hspace*{\fill} M.P.(3,4)  \\
+6. $p \wedge (q\vee r)$\hspace*{\fill} Distributive(2)  \\
+7. $q \vee r$ \hspace*{\fill} Simp(6)  \\
+8. $q$ \hspace*{\fill} D.S.(5,7)  \\
+9. $p \wedge q$ \hspace*{\fill} Conj(1,8)  \\
+10. $(p \wedge q) \vee (\sim p \wedge \sim q)$ \hspace*{\fill} Add(9)  \\
+11. $p \leftrightarrow q$ \hspace*{\fill} Biconditional(10)  \\
+
+
+
+\end{document}

@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{tikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{Homework 12}
+\author{DUMA Yehor (31209504)}
+\date{1/17}
+\begin{document}
+
+\maketitle
+\section{Exercise 7}
+\textbf{(a)} \\
+$\sim (\exists x)(P(x) \wedge  Q(x))$ \\
+\underline{$(\exists x)(P(x) \wedge R(x))$} \\
+$\therefore (\exists x)(R(x) \wedge \sim Q(x)) $ \\ \\
+1. $\sim (\exists x)(P(x) \wedge  Q(x))$ \\
+2. $(\exists x)(P(x) \wedge R(x))$ \\ 
+3. $P(w) \wedge R(w)$ \hspace*{\fill} E.I(2) \\
+4. $(\forall x) \sim (P(x) \wedge Q(x))$\hspace*{\fill} Q.Neg.(1) \\
+5. $\sim (P(w) \wedge Q(w))$ \hspace*{\fill} U.I.(4) \\
+6. $\sim P(w) \vee \sim Q(w))$\hspace*{\fill} Demorgan's(5) \\
+7. $P(w)$ \hspace*{\fill} Simp.(3) \\
+8. $\sim \sim P(w)$ \hspace*{\fill} Comp.(7) \\
+9. $\sim Q(w)$ \hspace*{\fill} D.S.(6,8) \\
+10. $R(w)$ \hspace*{\fill} Simp.(3) \\
+11. $R(w) \wedge \sim Q(w)$ \hspace*{\fill} Conj.(9,10) \\
+12. $(\exists x)(R(x) \wedge \sim Q(x))$ \hspace*{\fill} E.G.(10) \\\\
+\textbf{(b)} \\
+$(\forall x)(P(x) \rightarrow Q(x))$ \\
+\underline{$(\exists x)(R(x) \wedge \sim Q(x))$} \\
+$\therefore (\exists x)(R(x) \wedge \sim P(x))$ \\\\
+1. $(\forall x)(P(x) \rightarrow Q(x))$ \\
+2. $(\exists x)(R(x) \wedge \sim Q(x))$ \\
+3. $R(w) \wedge \sim Q(w)$  \hspace*{\fill} E.I(2) \\
+4. $P(w) \rightarrow Q(w)$ \hspace*{\fill} U.I(1) \\
+5. $R(w)$ \hspace*{\fill} Simp.(3) \\
+6. $\sim Q(w) \wedge R(w) $ \hspace*{\fill} Comm.(3) \\
+7. $\sim Q(w)$ \hspace*{\fill} Simp.(6) \\
+8. $\sim P(w)$ \hspace*{\fill} M.T.(4,7) \\
+9. $R(w) \wedge \sim P(w)$ \hspace*{\fill} Conj.(5,8) \\
+10. $(\exists x)(R(x) \wedge \sim P(x))$ \hspace*{\fill} E.G.(9) \\\\
+\textbf{(c)} \\
+$(\forall x)(P(x) \rightarrow Q(x))$ \\
+\underline{$(\exists x)(P(x) \wedge R(x))$} \\
+$\therefore (\exists x)(R(x) \wedge Q(x))$\\\\
+1. $(\forall x)(P(x) \rightarrow Q(x))$ \\
+2. $(\exists x)(P(x) \wedge R(x))$ \\
+3. $P(w) \wedge R(w)$ \hspace*{\fill} E.I.(2) \\
+4. $P(w) \rightarrow Q(w)$ \hspace*{\fill} U.I.(1) \\
+5. $R(w) \wedge P(w)$ \hspace*{\fill} Comm.(3) \\
+6. $P(w)$ \hspace*{\fill} Simp.(3) \\
+7. $Q(w)$ \hspace*{\fill} M.P.(4,6) \\
+8. $R(w)$ \hspace*{\fill} Simp.(5) \\
+9. $R(w) \wedge Q(w)$ \hspace*{\fill} Conj.(7,8) \\
+10. $(\exists x)(R(x) \wedge Q(x))$ \hspace*{\fill} E.G.(9) \\\\
+\textbf{(d)} \\ 
+$(\forall x)(P(x) \rightarrow Q(x))$ \\
+\underline{$\sim (\forall x)(P(x) \rightarrow R(x))$} \\
+$\therefore (\exists x)(\sim R(x) \wedge Q(x))$ \\ \\
+1. $(\forall x)(P(x) \rightarrow Q(x))$ \\
+2. $\sim (\forall x)(P(x) \rightarrow R(x))$ \\
+3. $(\exists x) \sim (P(x) \rightarrow R(x))$ \hspace*{\fill} Q.Neg.(2) \\
+4. $\sim (P(w) \rightarrow R(w))$ \hspace*{\fill} E.I.(3) \\
+5. $\sim \sim (P(w) \wedge \sim R(w))$ \hspace*{\fill} Conditional(4) \\
+6. $P(w) \wedge \sim R(w)$ \hspace*{\fill} Complement(5) \\
+7. $P(w)$ \hspace*{\fill} Simp.(6) \\
+8. $\sim R(w) \wedge P(w)$ \hspace*{\fill} Comm.(6) \\
+9. $\sim R(w)$ \hspace*{\fill} Simp.(8) \\
+10. $P(w) \rightarrow Q(w)$ \hspace*{\fill} U.I.(1) \\
+11. $Q(w)$ \hspace*{\fill} M.P.(7,10) \\
+12. $\sim R(w) \wedge Q(w)$ \hspace*{\fill} Conj.(9,11) \\
+13. $(\exists x)(\sim R(x) \wedge Q(x))$ \hspace*{\fill} E.G.(12) \\ \\
+\textbf{(e)} \\ 
+$(\forall x)(P(x) \rightarrow Q(x))$ \\
+$P(a)$ \\
+\underline{$R(a)\hspace{2.75cm}$} \\
+$\therefore (\exists x)(R(x) \wedge Q(x))$ \\\\
+1. $(\forall x)(P(x) \rightarrow Q(x))$ \\
+2. $P(a)$  \\
+3. $R(a)$ \\
+4. $P(a) \rightarrow Q(a)$ \hspace*{\fill} U.I.(1) \\
+5. $Q(a)$ \hspace*{\fill} M.P.(2,4) \\
+6. $R(a) \wedge Q(a)$ \hspace*{\fill} Conj.(3,5) \\
+7. $(\exists x)(R(x) \wedge Q(x))$ \hspace*{\fill} E.G.(6) \\ \\
+\textbf{(f)} \\
+$(\forall x)((P(x) \vee Q(x)) \rightarrow R(x))$ \\
+\underline{$(\forall x)((R(x) \vee S(x)) \rightarrow T(x))$} \\
+$\therefore (\forall x)(P(x) \rightarrow T(x))$ \\ \\
+1. $(\forall x)((P(x) \vee Q(x)) \rightarrow R(x))$ \\
+2. $(\forall x)((R(x) \vee S(x)) \rightarrow T(x))$ \\
+3. $ \quad P(v)$ \hspace*{\fill} A.P. \\
+4. $\quad (P(v) \vee Q(v)) \rightarrow R(v)$ \hspace*{\fill} I.U.(1) \\
+5. $\quad P(v) \vee Q(v)$ \hspace*{\fill} Addition(3) \\
+6. $\quad R(v)$ \hspace*{\fill} M.P.(4,5) \\
+7. $\quad (R(v) \vee S(v)) \rightarrow T(v)$ \hspace*{\fill} U.I.(2) \\
+8. $\quad R(v) \vee S(v)$ \hspace*{\fill} Addition(6) \\
+9. $\quad T(v)$ \hspace*{\fill} M.P.(7,8) \\
+10. $P(v) \rightarrow T(v)$ \hspace*{\fill} C.P.(3-10) \\
+11. $(\forall x)(P(x) \rightarrow T(x))$ \hspace*{\fill} U.G.(10) \\
+\end{document}
